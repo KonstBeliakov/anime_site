@@ -4,14 +4,19 @@
     <meta charset="UTF-8">
     <title>Поиск аниме</title>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
 </head>
 <body>
     <img src="logo.jpeg" alt="site logo" align="left" height="128" width="128">
     <h1>Anemiku</h1>
-    <div class="search container">
-        <input type="text" id="searchInput" placeholder="Введите название аниме">
-        <button onclick="searchAnime()">Поиск</button>
-    </div>
+    <p><i>Best anime site ever :3</i></p>
+
+
+    <form action="">
+        <input id="searchInput" type="search" placeholder="Enter anime name">
+        <i class="fa fa-search" onclick="searchAnime()"></i>
+    </form>
+
 
     <div class="anime-list" id="animeList"></div>
 

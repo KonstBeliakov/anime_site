@@ -1,12 +1,15 @@
 body{
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    width: 100%;
     margin-left: 128px;
     margin-right: 128px;
-    background-color: black;
+    background-color: #0B2349;
     color: #55bbee
 }
 
 h1 {
-    font-family: Arial, sans-serif;
     text-align: left;
     font-size: 64px;
     background: linear-gradient(45deg, #1155bb 33%, #2288bb 66%, #44bb88);
@@ -15,4 +18,63 @@ h1 {
     color: #0B2349;
     display: table-row;
     margin: 20px auto;
+}
+
+form{
+    display: inline-grid;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 0.5s;
+    width: 50px;
+    height: 50px;
+    background: white;
+    box-sizing: border-box;
+    border-radius: 25px;
+    border: 4px solid white;
+    padding: 5px;
+}
+
+input{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 40px;
+    line-height: 30px;
+    outline: 0;
+    border: 0;
+    display: none;
+    font-size: 1em;
+    border-radius: 20px;
+    padding: 0 20px;
+}
+
+.fa{
+    box-sizing: border-box;
+    padding: 10px;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-radius: 50%;
+    color: #0099bb;
+    text-align: center;
+    font-size: 1.2em;
+    transition: all 0.5s;
+}
+
+form:hover{
+    width: 300px;
+    cursor: pointer;
+}
+
+form:hover input{
+    display: block;
+}
+
+form:hover .fa{
+    background: #0099bb;
+    color: white;
 }
