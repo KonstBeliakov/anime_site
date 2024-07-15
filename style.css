@@ -1,0 +1,18 @@
+body{
+    margin-left: 128px;
+    margin-right: 128px;
+    background-color: black;
+    color: #55bbee
+}
+
+h1 {
+    font-family: Arial, sans-serif;
+    text-align: left;
+    font-size: 64px;
+    background: linear-gradient(45deg, #1155bb 33%, #2288bb 66%, #44bb88);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: #0B2349;
+    display: table-row;
+    margin: 20px auto;
+}
